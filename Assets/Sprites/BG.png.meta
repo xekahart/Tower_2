@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 119980a9a2958124387ce892de0a2cc5
+guid: f7178096742364043baff037bdc6553f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3173108755841604747
-    second: MOCK_1MARE_091225_0
-  - first:
-      213: 5490475144152504800
-    second: MOCK_1MARE_091225_1
+      213: -6695950386315148514
+    second: BG_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,45 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MOCK_1MARE_091225_0
+      name: BG_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 250
-        height: 251
+        y: 436
+        width: 1920
+        height: 644
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b8cde910a95290c20800000000000000
-      internalID: 3173108755841604747
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MOCK_1MARE_091225_1
-      rect:
-        serializedVersion: 2
-        x: 250
-        y: 0
-        width: 250
-        height: 251
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0e95257cd06123c40800000000000000
-      internalID: 5490475144152504800
+      spriteID: e13cb0ea9943313a0800000000000000
+      internalID: -6695950386315148514
       vertices: []
       indices: 
       edges: []
@@ -163,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -171,12 +146,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":1.0},"gridSpriteSize":{"x":250.0,"y":251.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      MOCK_1MARE_091225_0: 3173108755841604747
-      MOCK_1MARE_091225_1: 5490475144152504800
+      BG_0: -6695950386315148514
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
