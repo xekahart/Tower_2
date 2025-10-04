@@ -29,7 +29,7 @@ public class Arrow : MonoBehaviour
             if (collision.gameObject.GetComponent<EnemyHealth>())
             {
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.right * knockbackForce, ForceMode2D.Impulse);
-                collision.gameObject.GetComponent<EnemyHealth>().takeDamage(damage);
+                collision.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
                 Destroy(gameObject);
             }
     }

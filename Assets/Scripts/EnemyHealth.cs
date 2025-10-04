@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
@@ -7,20 +8,24 @@ public class EnemyHealth : MonoBehaviour
     public int maxHealth = 50;
     public float delayTime = .15f;
     public MareMovement mareMovement;
+    public GameObject popUpDamagePrefab;
+    public TMP_Text popUpText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        health = maxHealth;
+        health = maxHealth; 
     }
 
     // Update is called once per frame
-    public void takeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         health -= damage;
-        StartCoroutine(knockbackDelay());
+        popUpText.text = damage.ToString();
+        Instantiate(popUpDamagePrefab, transform.position, Quaternion.identity);
+        StartCoroutine(KnockbackDelay());
     }
 
-    IEnumerator knockbackDelay()
+    IEnumerator KnockbackDelay()
     {
         mareMovement.enabled = false;
         yield return new WaitForSeconds(delayTime);

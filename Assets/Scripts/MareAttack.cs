@@ -9,6 +9,12 @@ public class MareAttack : MonoBehaviour
         {
             collision.gameObject.GetComponent<TowerHealth>().health -= damage;
             Destroy(gameObject);
+        };
+        if (collision.gameObject.GetComponent<DefenderHealth>())
+        {
+            collision.gameObject.GetComponent<DefenderHealth>().health -= damage;
+            Destroy(gameObject);
         }
+
     }
 }

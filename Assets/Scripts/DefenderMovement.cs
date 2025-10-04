@@ -5,6 +5,7 @@ public class DefenderMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public float speed;
     public Rigidbody2D defenderRb;
+    public bool canMove= true;
     
     void Start()
     {
@@ -14,6 +15,14 @@ public class DefenderMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        defenderRb.linearVelocity = Vector2.right * speed;
+        if (canMove)
+        {
+            defenderRb.linearVelocity = Vector2.right * speed;
+        }
+        else
+        {
+            defenderRb.linearVelocity = Vector2.zero;
+        }
+
     }
 }

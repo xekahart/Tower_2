@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +9,9 @@ public class TowerHealth : MonoBehaviour
     public Slider slider;
     public Sprite[] towerSprites; 
     public SpriteRenderer towerSr;
+    public GameObject popUpDamagePrefab;
+    public TMP_Text popUpText;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -35,5 +39,13 @@ public class TowerHealth : MonoBehaviour
             int spriteIndex = Mathf.Clamp(Mathf.FloorToInt(healthPercentage * towerSprites.Length -1),0, towerSprites.Length -1);
             towerSr.sprite = towerSprites[spriteIndex];
         }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        popUpText.text = damage.ToString();
+        Instantiate(popUpDamagePrefab, transform.position, Quaternion.identity);
+
     }
 }
