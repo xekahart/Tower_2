@@ -181,5 +181,5 @@ MonoBehaviour:
   arrowRb: {fileID: 1900952516672145569}
   speed: 5
   range: 3
-  damage: 1
+  damage: 10
   knockbackForce: 5
