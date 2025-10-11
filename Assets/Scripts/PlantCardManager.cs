@@ -16,14 +16,14 @@ public class PlantCardManager : MonoBehaviour
     public Transform cardHolderTransform;
 
     [Header("Plant Parameters")]
-    public GameObject plantCards;
+    public PlantScriptableObject plantCard;
     public float cooldown;
     public int cost;
     public Sprite plantIcon;
 
     private void Start()
     {
-        plantCards = new GameObject[amtOfCards];
+        plantCard = plantCardSO[amtOfCards];
 
         for (int i = 0; i < amtOfCards; i++)
         {
@@ -35,7 +35,7 @@ public class PlantCardManager : MonoBehaviour
     {
         GameObject card = Instantiate(cardPrefab,cardHolderTransform);
 
-        plantCards[index] = card;
+       // plantCard[index] = card;
 
         //Getting Variables
         plantIcon = plantCardSO[index].plantIcon;
