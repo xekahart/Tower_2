@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05934a5cb6db62c4ebd90c595d79723d, type: 3}
   m_Name: Turtle
   m_EditorClassIdentifier: Assembly-CSharp::PlantScriptableObject
-  plantIcon: {fileID: 21300000, guid: 6a15f5b39d93eb444985d06f69dc2dd0, type: 3}
-  cost: 25
-  cooldown: 2
+  Icon: {fileID: 21300000, guid: 6a15f5b39d93eb444985d06f69dc2dd0, type: 3}
+  Cost: 2
