@@ -158,6 +158,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35956929490997b4abc49a3d1c0f1cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DefenderHealth
+  health: 0
+  maxHealth: 50
+  delayTime: 0.15
+  bow: {fileID: 0}
+  popUpDamagePrefab: {fileID: 3081021118480306257, guid: fa3420ccad26d3d408f33205ff011ad6, type: 3}
+  popUpText: {fileID: 102406335876288648, guid: fa3420ccad26d3d408f33205ff011ad6, type: 3}
 --- !u!1 &8931724013078443685
 GameObject:
   m_ObjectHideFlags: 0
