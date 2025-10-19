@@ -16,26 +16,34 @@ public class DefenderHealth : MonoBehaviour
         health = maxHealth;
     }
 
-    // Update is called once per frame
-    public void TakeDamage(int damage)
+    private void Update()
     {
-        health -= damage;
-        popUpText.text = damage.ToString();
-        Instantiate(popUpDamagePrefab, transform.position, Quaternion.identity);
-        StartCoroutine(KnockbackDelay());
-    }
-
-    IEnumerator KnockbackDelay()
-    {
-        bow.enabled = false;
-        yield return new WaitForSeconds(delayTime);
         if (health <= 0)
         {
             Destroy(gameObject);
         }
-        else
-        {
-            bow.enabled = true;
-        }
     }
+    
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        Instantiate(popUpDamagePrefab, transform.position, Quaternion.identity);
+        popUpText.text = damage.ToString();
+
+        //      StartCoroutine(KnockbackDelay());
+    }
+
+    //IEnumerator KnockbackDelay()
+    //{
+    //    bow.enabled = false;
+    //    yield return new WaitForSeconds(delayTime);
+    //    if (health <= 0)
+    //    {
+    //        Destroy(gameObject);
+    //    }
+    //    else
+    //    {
+    //        bow.enabled = true;
+    //    }
+    //}
 }
