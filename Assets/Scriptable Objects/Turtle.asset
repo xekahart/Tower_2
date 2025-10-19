@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Turtle
   m_EditorClassIdentifier: Assembly-CSharp::PlantScriptableObject
   Icon: {fileID: 21300000, guid: 6a15f5b39d93eb444985d06f69dc2dd0, type: 3}
-  Cost: 2
+  Cost: 40

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Pig
   m_EditorClassIdentifier: Assembly-CSharp::PlantScriptableObject
   Icon: {fileID: 21300000, guid: a83ad205a811d8340bf05fd71508bca9, type: 3}
-  Cost: -2147483648
+  Cost: 10
+  plushSprite: {fileID: 1525573183036478437, guid: 9e9faef004bd36a4baa1a9b322b12a9f, type: 3}

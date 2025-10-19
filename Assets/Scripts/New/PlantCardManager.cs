@@ -16,7 +16,7 @@ public class CardManager : MonoBehaviour
     {
         //Show in UI
         //cardsHolder children
-        for (int i = 0; i < _cardsInLevel.Length; i++)
+        for (int i = 0; i < _cardsInLevel.Length; i++)   // R: explain pls
         {
             ApplyData(_cardsInLevel[i]);
         }
@@ -24,6 +24,13 @@ public class CardManager : MonoBehaviour
     public void ApplyData(CardData newData)
     {
         GameObject obj = Instantiate(_cardPrefab, _cardsHolder);
-        obj.GetComponent<CardHandler>().ApplyData(newData);
+        obj.GetComponent<CardHandler>().ApplyData(newData); // R: explain dis too pls
+
+        // tratando de agregar el drag and drop
+       // CardManager_2 cardManager_2 = CardData.GetComponent<CardManager_2>();
+
+        
+
+
     }
 }
