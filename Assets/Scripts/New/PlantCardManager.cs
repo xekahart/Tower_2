@@ -24,13 +24,12 @@ public class CardManager : MonoBehaviour
     public void ApplyData(CardData newData)
     {
         GameObject obj = Instantiate(_cardPrefab, _cardsHolder);
-        obj.GetComponent<CardHandler>().ApplyData(newData); // R: explain dis too pls
+        
+        CardHandler newCard = obj.GetComponent<CardHandler>();
+
+        newCard.ApplyData(newData); // R: explain dis too pls :v
 
         // tratando de agregar el drag and drop
        // CardManager_2 cardManager_2 = CardData.GetComponent<CardManager_2>();
-
-        
-
-
     }
 }

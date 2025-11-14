@@ -7,4 +7,5 @@ public class CardData : ScriptableObject
     public int Cost;
     //public float Cooldown;
     public Sprite plushSprite;
+    public GameObject _prefab;
 }

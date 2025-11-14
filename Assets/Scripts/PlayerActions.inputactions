@@ -1,0 +1,55 @@
+{
+    "version": 1,
+    "name": "PlayerActions",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "df2027a6-72bc-4109-ad55-bee801169e52",
+            "actions": [
+                {
+                    "name": "PlaceUnit",
+                    "type": "Button",
+                    "id": "d90a5347-9df1-4f46-a2d5-ba1cc5895709",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PositionClick",
+                    "type": "Value",
+                    "id": "7df1838f-4ed0-474f-b1f7-72cf1c1e092a",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8b97f16d-b34b-49dd-8a67-8ec7c6c12be2",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PlaceUnit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "35eca2cb-37fa-4900-947a-97ec513d5740",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PositionClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
