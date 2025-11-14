@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b18b7fedd57fb00448914dee36a09757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DefenderMovement
-  speed: 1
+  speed: 0
   defenderRb: {fileID: 417315654247166122}
   canMove: 1
 --- !u!50 &417315654247166122
