@@ -47,6 +47,7 @@ MonoBehaviour:
   enemyPrefab:
   - {fileID: 7405586129452266961, guid: 29aef6df0f6605847802df948e36bc77, type: 3}
   - {fileID: 7405586129452266961, guid: 29aef6df0f6605847802df948e36bc77, type: 3}
-  - {fileID: 7272664749591377216, guid: 8c1c8a2aa0b569c459d50e5f048b0263, type: 3}
+  - {fileID: 7405586129452266961, guid: 29aef6df0f6605847802df948e36bc77, type: 3}
+  - {fileID: 7405586129452266961, guid: 29aef6df0f6605847802df948e36bc77, type: 3}
   - {fileID: 7405586129452266961, guid: 29aef6df0f6605847802df948e36bc77, type: 3}
   spawnTime: 2

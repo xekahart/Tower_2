@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Octo
   m_EditorClassIdentifier: Assembly-CSharp::PlantScriptableObject
   Icon: {fileID: -378013489033439344, guid: 946470c06bb6ca74cbb01d4d0afc0ec4, type: 3}
-  Cost: 60
+  Cost: 20
   plushSprite: {fileID: 0}
+  _prefab: {fileID: 279343595990243235, guid: af7ce31a5383d5246a3b43168988e0e9, type: 3}

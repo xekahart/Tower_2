@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Turtle
   m_EditorClassIdentifier: Assembly-CSharp::PlantScriptableObject
   Icon: {fileID: 21300000, guid: 6a15f5b39d93eb444985d06f69dc2dd0, type: 3}
-  Cost: 40
+  Cost: 30
+  plushSprite: {fileID: 0}
+  _prefab: {fileID: 279343595990243235, guid: 3bb65339d64ef6249bb8a5379d944216, type: 3}
